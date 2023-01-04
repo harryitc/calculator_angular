@@ -1,0 +1,18 @@
+:root {
+  --color-body: #202020;
+  --color-button: #3c3c3c;
+}
+.custom-button {
+  margin: 3px;
+  // border: 2px solid var(--color-body);
+  background-color: rgb(60, 60, 60);
+  &:hover {
+    background-color: #323232;
+  }
+}
+#col-24 {
+  background-color: rgb(18, 123, 131);
+  &:hover {
+    background-color: rgb(34, 88, 92);
+  }
+}
