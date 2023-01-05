@@ -1,9 +1,7 @@
-:root {
-  --color-body: #202020;
-  --color-button: #3c3c3c;
-}
+$color-body: #202020;
+$color-button: #3c3c3c;
 .custom-button {
-  margin: 3px;
+  border: 2px solid $color-body;
   // border: 2px solid var(--color-body);
   background-color: rgb(60, 60, 60);
   &:hover {

@@ -1,6 +1,6 @@
 import { Character } from "./character";
 
-export const characters: Character[] = [
+export const CHARACTERS: Character[] = [
   // row 1
   { id: 1, char: '%' }, { id: 2, char: 'CE' }, { id: 3, char: 'Clear' }, { id: 4, char: 'Delete' },
   // row 2
@@ -10,7 +10,7 @@ export const characters: Character[] = [
   // row 4
   { id: 13, char: '4' }, { id: 14, char: '5' }, { id: 15, char: '6' }, { id: 16, char: '-' },
   // row 5
-  { id: 17, char: '1' }, { id: 18, char: '2' }, { id: 19, char: '3' }, { id: 22, char: '+' },
+  { id: 17, char: '1' }, { id: 18, char: '2' }, { id: 19, char: '3' }, { id: 20, char: '+' },
   // row 6
   { id: 21, char: '+/-' }, { id: 22, char: '0' }, { id: 23, char: '.' }, { id: 24, char: '=' },
 ]
