@@ -1,0 +1,11 @@
+<div class="container">
+
+  <app-man-hinh [message]="message" [result]="result"></app-man-hinh>
+
+  <div class="row justify-content-center">
+    <div id="col-{{list.id}}" *ngFor="let list of listBanPhim" class="col-lg-3 text-white btn custom"
+      (click)="onClick(list.id)">
+      {{list.name }}
+    </div>
+  </div>
+</div>

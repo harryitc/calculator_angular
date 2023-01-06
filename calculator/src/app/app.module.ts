@@ -3,18 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ButtonNumberComponent } from './button-number/button-number.component';
-import { ScreenCasioComponent } from './screen-casio/screen-casio.component';
+import { BanPhimComponent } from './ban-phim/ban-phim.component';
+import { ManHinhComponent } from './man-hinh/man-hinh.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ButtonNumberComponent,
-    ScreenCasioComponent
+    BanPhimComponent,
+    ManHinhComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
