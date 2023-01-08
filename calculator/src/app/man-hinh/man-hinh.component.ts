@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
 
-
 @Component({
   selector: 'app-man-hinh',
   templateUrl: './man-hinh.component.html',

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { BanphimService } from '../banphim.service';
-import * as math from 'mathjs';
 
 enum Button {
   clear = 3,
@@ -21,10 +20,9 @@ export class BanPhimComponent implements OnInit {
   // lấy danh sách bàn phím và hiển thị ra
   listBanPhim = this.banPhimService.getListBanPhim()
 
-  // khai báo biến lấy 1 ký tự khi nhập vào
-  getCharClick?: string
   // hiển thị message ra ngoài
   message = ''
+
   // hiển thị kết quả
   result?: number
 
@@ -34,14 +32,14 @@ export class BanPhimComponent implements OnInit {
     // Nếu id trùng với button clear thì -> xóa màn hình
     if (id === Button.clear) {
       this.message = this.banPhimService.clearScreen()
-      this.result = this.message.length
+      this.result = 0
       return;
     }
 
     // Nếu id trùng với nút BẰNG (hay còn gọi là nút submit tính toán)
     // thì sẽ in ra kết quả
     if (id === Button.submit) {
-      this.result = math.evaluate(this.message)
+      this.result = this.banPhimService.getResult(this.message)
       return;
     }
 

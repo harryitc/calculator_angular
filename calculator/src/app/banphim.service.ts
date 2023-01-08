@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import * as math from 'mathjs';
 import { CauTrucBanPhim } from './CauTrucBanPhim';
 
 @Injectable({
@@ -15,7 +16,7 @@ export class BanphimService {
 
     // row 2
     { id: 5, name: '1/x' }, { id: 6, name: 'x^2' },
-    { id: 7, name: 'sqrt()' }, { id: 8, name: '/' },
+    { id: 7, name: 'sqrt(' }, { id: 8, name: '/' },
 
     // row 3
     { id: 9, name: '7' }, { id: 10, name: '8' },
@@ -41,7 +42,11 @@ export class BanphimService {
 
   showMessageOnScreen(id: number): string {
     return this.listBanPhim[id - 1].name
+  }
 
+  // tính kết quả khi nhập số
+  getResult(message: string): number {
+    return math.evaluate(message)
   }
 
   // xóa màn hình
