@@ -8,8 +8,9 @@ import { Component, Input } from '@angular/core';
 export class ManHinhComponent {
 
   // pass data from parent to child component
-  @Input() message = ''
+  @Input() message?: string
   @Input() result?: number
+
   constructor() { }
 
 }

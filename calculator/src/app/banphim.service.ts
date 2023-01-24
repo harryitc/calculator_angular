@@ -40,7 +40,7 @@ export class BanphimService {
     return this.listBanPhim
   }
 
-  showMessageOnScreen(id: number): string {
+  getCharacter(id: number): string {
     return this.listBanPhim[id - 1].name
   }
 
